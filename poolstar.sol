@@ -349,10 +349,10 @@ contract BEP20Token is Context, IBEP20, Ownable {
   string private _name;
 
   constructor() public {
-    _name = "poolstar";
-    _symbol = "POS";
+    _name = "DAO EXODUS";
+    _symbol = "CDXV";
     _decimals = 18;
-    _totalSupply = 100000000000000000000000000; // this total supply 100M
+    _totalSupply = 500000000; 
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
